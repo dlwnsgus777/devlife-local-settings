@@ -114,7 +114,7 @@ print_manual_steps() {
   cat <<'EOF'
 
 수동으로 해야 할 작업:
-  1. Raycast → Settings → Advanced → Import → raycast/*.rayconfig
+  1. Raycast 설정 (단축키, 확장)
   2. Chrome 실행 → 확장 설치 알림에서 각 확장 '사용 설정'
   3. 토큰(BITBUCKET_TOKEN, GEMINI_API_KEY 등)과 SSH alias 추가
   4. 필요한 Java 설치: sdk install java 21.0.3-amzn (java8/java17/java21 alias 참고)

@@ -22,14 +22,13 @@ Command Line Tools가 없으면 설치 창이 뜨고 스크립트가 종료된�
 | `zsh/` | `~/.zshrc`, `~/.zprofile`로 링크 |
 | `ghostty/config` | `~/.config/ghostty/config`로 링크 (cmux가 읽음) |
 | `chrome/extensions.txt` | Chrome 외부 확장으로 등록할 확장 ID |
-| `raycast/` | Raycast 내보내기 파일(`.rayconfig`)을 직접 넣는 곳 |
-| `apps/` | `Spectacle.zip`을 직접 넣는 곳 |
+| `apps/Spectacle.zip` | Spectacle 1.2 (Homebrew에서 삭제된 앱) |
 
 Java·Node는 sdkman·nvm 도구만 설치하고, Node는 최신 LTS를 기본값으로 둔다.
 
 ## 수동 작업
 
-1. Raycast → Settings → Advanced → Import → `raycast/*.rayconfig`
+1. Raycast 설정 (단축키, 확장)
 2. Chrome 실행 → 확장 설치 알림에서 각 확장 "사용 설정"
 3. 토큰과 SSH alias 추가 (공개 저장소라 포함하지 않음)
 4. 필요한 Java 설치: `sdk install java <버전>` (`java8`/`java17`/`java21` alias 참고)
