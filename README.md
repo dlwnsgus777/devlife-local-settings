@@ -14,6 +14,18 @@ cd devlife-local-settings
 Command Line Tools가 없으면 설치 창이 뜨고 스크립트가 종료된다. 설치가 끝나면 다시 실행한다.
 여러 번 실행해도 안전하다. 이미 설치된 항목은 건너뛰고, 기존 설정 파일은 `*.backup.<시각>`으로 백업한 뒤 링크한다.
 
+## 설치 항목
+
+| 구분 | 항목 |
+|------|------|
+| CLI | docker, gh, git, git-lfs, gradle, mole, poppler, python@3.12, tree, uv, yarn, zsh, zsh-syntax-highlighting |
+| 앱 | ChatGPT, Claude, cmux, Google Chrome, Obsidian, Raycast, Scroll Reverser, Spectacle |
+| 폰트 | Cascadia Mono PL, Fira Code, JetBrainsMono Nerd Font, Noto Sans KR |
+| 셸 | oh-my-zsh (agnoster 테마) |
+| 언어 도구 | sdkman, nvm + Node 최신 LTS |
+| 개발 도구 | Claude Code (네이티브 설치), Codex CLI (`@openai/codex`) |
+| Chrome 확장 | Markdown Viewer, Vimium, JSON Viewer, Claude, Focus To-Do, YouTube Summary with ChatGPT & Claude |
+
 ## 구성
 
 | 경로 | 내용 |
