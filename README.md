@@ -16,15 +16,23 @@ Command Line Tools가 없으면 설치 창이 뜨고 스크립트가 종료된�
 
 ## 설치 항목
 
-| 구분 | 항목 |
-|------|------|
-| CLI | docker, gh, git, git-lfs, gradle, mole, poppler, python@3.12, tree, uv, yarn, zsh, zsh-syntax-highlighting |
-| 앱 | ChatGPT, Claude, cmux, Google Chrome, Obsidian, Raycast, Scroll Reverser, Spectacle |
-| 폰트 | Cascadia Mono PL, Fira Code, JetBrainsMono Nerd Font, Noto Sans KR |
-| 셸 | oh-my-zsh (agnoster 테마) |
-| 언어 도구 | sdkman, nvm + Node 최신 LTS |
-| 개발 도구 | Claude Code (네이티브 설치), Codex CLI (`@openai/codex`) |
-| Chrome 확장 | Markdown Viewer, Vimium, JSON Viewer, Claude, Focus To-Do, YouTube Summary with ChatGPT & Claude |
+`setup.sh`가 아래 순서대로 설치한다. 이미 설치된 항목은 건너뛴다.
+
+| 순서 | 구분 | 항목 | 설치 방법 |
+|------|------|------|----------|
+| 1 | 사전 준비 | Xcode Command Line Tools | `xcode-select --install` |
+| 2 | 패키지 관리 | Homebrew | [공식 설치 스크립트](https://brew.sh) |
+| 3 | CLI | docker, gh, git, git-lfs, gradle, mole, poppler, python@3.12, tree, uv, yarn, zsh, zsh-syntax-highlighting | `brew bundle` (Brewfile의 `brew`) |
+| 3 | 앱 | ChatGPT, Claude, cmux, Google Chrome, Obsidian, Raycast, Scroll Reverser | `brew bundle` (Brewfile의 `cask`) |
+| 3 | 폰트 | Cascadia Mono PL, Fira Code, JetBrainsMono Nerd Font, Noto Sans KR | `brew bundle` (Brewfile의 `cask`) |
+| 4 | 셸 | oh-my-zsh (agnoster 테마) | [공식 설치 스크립트](https://ohmyz.sh) (`RUNZSH=no KEEP_ZSHRC=yes`) |
+| 5 | 언어 도구 | sdkman | [공식 설치 스크립트](https://sdkman.io) (`rcupdate=false`) |
+| 6 | 언어 도구 | nvm + Node 최신 LTS | [nvm 설치 스크립트](https://github.com/nvm-sh/nvm) → `nvm install --lts` → `nvm alias default 'lts/*'` |
+| 7 | 개발 도구 | Codex CLI | `npm install -g @openai/codex` |
+| 8 | 개발 도구 | Claude Code | [네이티브 설치 스크립트](https://claude.ai/install.sh) |
+| 9 | Chrome 확장 | Markdown Viewer, Vimium, JSON Viewer, Claude, Focus To-Do, YouTube Summary with ChatGPT & Claude | `chrome/extensions.txt`의 ID마다 Chrome `External Extensions` 폴더에 JSON 생성 → Chrome 실행 시 설치 |
+| 10 | 앱 | Spectacle 1.2 | `apps/Spectacle.zip`을 `/Applications`에 압축 해제 (Homebrew에서 삭제된 앱) |
+| 11 | 설정 파일 | `.zshrc`, `.zprofile`, Ghostty 설정 | 저장소 파일을 홈 디렉터리에 심볼릭 링크 |
 
 ## 구성
 
